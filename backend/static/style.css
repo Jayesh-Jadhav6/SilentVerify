@@ -1,0 +1,56 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fefcf6; /* soft off-white */
+  margin: 0;
+  padding: 2rem;
+  color: #222;
+}
+
+h1 {
+  color: #b22222; /* UIDAI red */
+  border-bottom: 2px solid #b22222;
+  padding-bottom: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+h2 {
+  color: #d35400;
+}
+
+input {
+  padding: 10px;
+  font-size: 16px;
+  width: 280px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #d35400;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #b03c00;
+}
+
+#result {
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.container {
+  max-width: 400px;
+  margin: auto;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}

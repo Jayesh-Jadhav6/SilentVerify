@@ -17,6 +17,23 @@ def serve_index():
 
 CSV_FILE = "user_data.csv"
 
+
+@app.route("/stats")
+def get_stats():
+    try:
+        with open(CSV_FILE, "r", encoding="utf-8") as f:
+            reader = csv.DictReader(f)
+            human = bot = 0
+            for row in reader:
+                if row["label"] == "human":
+                    human += 1
+                elif row["label"] == "bot":
+                    bot += 1
+        return {"human": human, "bot": bot}
+    except Exception as e:
+        print("Error reading stats:", e)
+        return {"error": "Could not read stats"}, 500
+
 @app.route("/submit-data", methods=["POST"])
 def receive_data():
     try:

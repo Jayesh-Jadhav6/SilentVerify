@@ -1,18 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Passive CAPTCHA</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Passive CAPTCHA</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <h1>UIDAI Passive CAPTCHA Test</h1>
-    <script src="script.js"></script>
+  <h1>Issue Adhar Card</h1>
 
-    <h2>Enter Aadhaar Number</h2>
-    <input type="text" id="aadhaar" maxlength="12" placeholder="Enter 12-digit Aadhaar" />
-    <button onclick="submitForm()">Submit</button>
-    <p id="result"></p>
+  <h2>Enter Details</h2>
+  <input type="text" id="name" placeholder="Full Name" /><br><br>
+  <input type="text" id="aadhaar" maxlength="12" placeholder="Enter 12-digit Aadhaar" /><br><br>
+  <button onclick="submitForm()">Submit</button>
+
+  <p id="result"></p>
+
+  <script src="script.js"></script>
+
+  <h3>Prediction Stats</h3>
+  <canvas id="barChart" width="400" height="200"></canvas>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  
 
 </body>
 </html>
